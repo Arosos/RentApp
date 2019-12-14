@@ -9,5 +9,5 @@ javac -classpath lib/jade.jar -d classes src/*.java
 ```
 ## Run
 ```sh
-java -cp lib/jade.jar:classes jade.Boot -gui -agents hello1:rentapp.agents.HelloWorldAgent
+java -cp lib/jade.jar:classes jade.Boot -gui -agents tenant:rentapp.agents.TenantAgent
 ```
