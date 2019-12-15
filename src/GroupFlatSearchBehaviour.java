@@ -1,4 +1,4 @@
-package rentapp.behaviours;
+package rentapp.behaviours.matchgroup;
 
 import jade.core.behaviours.*;
 

@@ -1,7 +1,8 @@
 package rentapp.agents;
 
 import jade.core.Agent;
-import rentapp.behaviours.GroupFinderBehaviour;
+import rentapp.behaviours.matchgroup.*;
+import rentapp.behaviours.searchforoffer.*;
 
 /**
   @author Tomasz Zieliński
@@ -9,7 +10,8 @@ import rentapp.behaviours.GroupFinderBehaviour;
 public class TenantAgent extends Agent {
   protected void setup() {
     System.out.println("TenantAgent_"+getLocalName());
-    addBehaviour(new GroupFinderBehaviour());
+    addBehaviour(new MatchGroupBehaviour());
+    addBehaviour(new SearchForOfferBehaviour());
   }
 
   public int onEnd() {
