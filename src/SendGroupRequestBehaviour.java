@@ -1,4 +1,4 @@
-package rentapp.behaviours.matchgroup;
+package rentapp.behaviours.menageoffer;
 
 import jade.core.behaviours.*;
 
@@ -12,7 +12,7 @@ import jade.lang.acl.MessageTemplate;
   @author Tomasz Zieliński
  */
 
-public class ShareGroupPreferencesBehaviour extends CyclicBehaviour {
+public class SendGroupRequestBehaviour extends CyclicBehaviour {
   public void action() {
     ACLMessage msg = myAgent.receive(template);
     if (msg != null) {
