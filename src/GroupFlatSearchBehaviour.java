@@ -35,6 +35,7 @@ public class GroupFlatSearchBehaviour extends FSMBehaviour {
     registerDefaultTransition(CreateGroup,ShareGroup);
 
     registerState(new NamePrinter(), ShareGroup);
+    registerDefaultTransition(ShareGroup, LastState);
     registerTransition(ShareGroup, ShareGroup, CONTINUE_SHARE_GROUP);
     registerTransition(ShareGroup, Propose_ConsiderGroupCreation, END_SHARE_GROUP);
 

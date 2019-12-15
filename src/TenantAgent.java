@@ -13,8 +13,9 @@ import rentapp.behaviours.searchforoffer.*;
 public class TenantAgent extends Agent {
   protected void setup() {
     System.out.println("TenantAgent_"+getLocalName());
-    addBehaviour(new MatchGroupBehaviour());
-    addBehaviour(new SearchForOfferBehaviour());
+    //addBehaviour(new MatchGroupBehaviour());
+    //addBehaviour(new SearchForOfferBehaviour());
+    addBehaviour(new SendRequestToOtherTenantBehaviour());
     addBehaviour(new RespondToOtherTenant());
     RegisterInDF();
   }

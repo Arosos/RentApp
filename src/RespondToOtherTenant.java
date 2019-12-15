@@ -7,10 +7,13 @@ import jade.lang.acl.MessageTemplate;
 public class RespondToOtherTenant extends CyclicBehaviour {
     @Override
     public void action() {
-        ACLMessage msg = myAgent.receive(template);
+        ACLMessage msg = myAgent.receive();
         if (msg != null) {
-            System.out.println("Message matching custom template received: " + msg.getContent());
-            System.out.println(msg);
+            ACLMessage reply = msg.createReply();
+            reply.setPerformative(ACLMessage.INFORM);
+            reply.setContent("TAK");
+            System.out.println("Received message. My agent: " + myAgent.getName() + " Message matching custom template received: " + msg.getContent());
+            myAgent.send(reply);
         }
         else {
             block();
