@@ -1,4 +1,4 @@
-package rentapp.behaviours.matchgroup;
+package org.rentapp.Tenant.Behaviors;
 
 import jade.core.behaviours.*;
 import jade.lang.acl.ACLMessage;

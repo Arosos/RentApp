@@ -1,5 +1,6 @@
-package rentapp.behaviours.menageoffer;
+package org.rentapp.Tenant.Behaviors;
 
+import org.rentapp.Landlord.Behaviors.ShareOfferBehaviour;
 import jade.core.behaviours.*;
 
 /**
