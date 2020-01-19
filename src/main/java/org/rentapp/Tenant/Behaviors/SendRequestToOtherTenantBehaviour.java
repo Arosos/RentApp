@@ -1,4 +1,4 @@
-package rentapp.behaviours.matchgroup;
+package org.rentapp.Tenant.Behaviors;
 
 import java.util.*;
 import java.util.stream.*;
@@ -34,7 +34,7 @@ public class SendRequestToOtherTenantBehaviour extends CyclicBehaviour {
         msg.addReceiver(new AID(firstTenant.getLocalName(), AID.ISLOCALNAME));
         msg.setLanguage("x");
         msg.setOntology("xx");
-        msg.setContent("Hej, chcesz być ze mną w grupie?");
+        msg.setContent("Hej, chcesz być ze mną w grupieeeeeeee?");
         myAgent.send(msg);
     }
 }
